@@ -3,7 +3,7 @@ app = express();
 const morgan = require('morgan'); //show as when someone connect our server and show the statur exmp: GET / 200 1.034 ms - 27
 const mongoose = require('mongoose');
 
-mongoose.connect(`mongodb+srv://yonimahluf:Yy6232133@yoniproject.h4csp.mongodb.net/<dbname>?retryWrites=true&w=majority`, {
+mongoose.connect(`mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@yoniproject.h4csp.mongodb.net/<dbname>?retryWrites=true&w=majority`, {
     useNewUrlParser : true,
     useUnifiedTopology : true
 

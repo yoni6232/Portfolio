@@ -3,13 +3,15 @@ const router = express.Router();
 
 const {
     getAllArticles,
-    createArticles,
+    createArticle,
     updateArticle,
-    deleteArticle
+    deleteArticle,
+    getArticle
 } = require('../controllers/articles');
 
 router.get('/',getAllArticles);
-router.post('/', createArticles);
+router.get('/:articleId',getArticle);
+router.post('/', createArticle);
 router.patch('/:articleId',updateArticle)
 router.delete('/:articleId',deleteArticle) 
 
