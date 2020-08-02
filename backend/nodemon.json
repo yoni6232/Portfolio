@@ -1,0 +1,7 @@
+{
+    "env" :{
+        "MONGO_USERNAME" : "yonimahluf",
+        "MONGO_PASSWORD" : "Yy6232133",
+        "JWT_KEY" : "yoni"
+    }
+}
